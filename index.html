@@ -51,14 +51,14 @@
                 </div>
                 <div class="card-body">
                   
-                  <form method="" action="">
+                  <form method="post" action="buscarVuelos.html">
                     <div class="form-floating">
-                        <input type="text" name="origen" value="" class="form-control mb-3" id="floatingInput" placeholder="Alias" required/>
-                        <label for="floatingInput">Origen</label>
+                        <input type="text" name="origen" value="" class="form-control mb-3" id="floatingOrigen" placeholder="Origen" required/>
+                        <label for="floatingOrigen">Origen</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="password" name="destino" value="" class="form-control" id="floatingPassword" placeholder="Contraseña" required/>
-                        <label for="floatingPassword">Destino</label>
+                        <input type="text" name="destino" value="" class="form-control" id="floatingDestino" placeholder="Destino" required/>
+                        <label for="floatingDestino">Destino</label>
                     </div>
                     <div class="form-floating mb-3">
                       <input type="date" name="ida" value="" class="form-control" id="floatingIda" placeholder="Ida" required/>
@@ -86,14 +86,14 @@
                 </div>
                 <div class="card-body">
                   
-                  <form method="POST" action="iniciarSesionServlet">
+                  <form method="post" action="buscarVuelos.html">
                     <div class="form-floating">
-                        <input type="text" name="origen" value="" class="form-control mb-3" id="floatingInput" placeholder="Alias" required/>
-                        <label for="floatingInput">Origen</label>
+                        <input type="text" name="origen" value="" class="form-control mb-3" id="floatingOrigen" placeholder="Origen" required/>
+                        <label for="floatingOrigen">Origen</label>
                     </div>
                     <div class="form-floating mb-3">
-                        <input type="password" name="destino" value="" class="form-control" id="floatingPassword" placeholder="Contraseña" required/>
-                        <label for="floatingPassword">Destino</label>
+                        <input type="text" name="destino" value="" class="form-control" id="floatingDestino" placeholder="Destino" required/>
+                        <label for="floatingDestino">Destino</label>
                     </div>
                     <div class="form-floating mb-3">
                       <input type="date" name="ida" value="" class="form-control" id="floatingIda" placeholder="Ida" required/>
@@ -112,6 +112,129 @@
         </div>
       </section>
     
+      <section class="mt-4">
+        <div class="container mb-4">
+          <div class="row align-items-center">
+            <div class="col">
+            </div>
+            <div class="col">
+              <h2 class="text-center" style="color: #000000;">Ciudades que están de moda</h2>
+            </div>
+            <div class="col">
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center mx-5">
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/tokyo.jpg" class="img-fluid rounded-start" alt="">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text mb-1">Vuelos a</p>
+                    <h5 class="card-title">Tokyo</h5>
+                    <a href="" class="btn btn-warning mb-3">Buscar vuelos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/roma.jpg" class="img-fluid rounded-start" alt="">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text mb-1">Vuelos a</p>
+                    <h5 class="card-title">Roma</h5>
+                    <a href="" class="btn btn-warning mb-3">Buscar vuelos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="img/paris.jpg" class="img-fluid rounded-start" alt="">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <p class="card-text mb-1">Vuelos a</p>
+                    <h5 class="card-title">París</h5>
+                    <a href="" class="btn btn-warning mb-3">Buscar vuelos</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center mx-5">
+        <div class="col">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/madrid.jpg" class="img-fluid rounded-start" alt="">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text mb-1">Vuelos a</p>
+                  <h5 class="card-title">Madrid</h5>
+                  <a href="" class="btn btn-warning mb-3">Buscar vuelos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/estambul.jpg" class="img-fluid rounded-start" alt="">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text mb-1">Vuelos a</p>
+                  <h5 class="card-title">Estambul</h5>
+                  <a href="" class="btn btn-warning mb-3">Buscar vuelos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/budapest.jpg" class="img-fluid rounded-start" alt="">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <p class="card-text mb-1">Vuelos a</p>
+                  <h5 class="card-title">Budapest</h5>
+                  <a href="" class="btn btn-warning mb-3">Buscar vuelos</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      </section>
+
+      <section class="mt-4">
+        
+      </section>
+
     </main>
 
     <div class="container border-top mt-5">
