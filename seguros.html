@@ -29,56 +29,57 @@
         </div>
     </div>
     <main>
-        <div class="container">
+        <div class="container text-center">
+          <form method="post" action="infoReserva.html">
             <div class="row align-items-start">
               <div class="col">
                 <div class="card mx-2 mb-4">
                   <div class="card-header bg-warning text-dark">
-                    <h5>Ida y vuelta <i class="bi bi-arrow-left-right"></i></h5>
+                    <h5>Seguro Premium</h5>
                   </div>
                   <div class="card-body">
-                    
-                    <form method="post" action="buscarVuelosIdaYVuelta.html">
-                      Seguro Premium <br>
-                      - 
-                      <input type="submit" value="Buscar vuelos" class="btn btn-warning mb-3"/>
-                    </form>
-            
+                    - Contiene asistencia medica en viajes <br>
+                    - Regreso anticipado y prolongación del seguro <br>
+                    - Teleconsulta medica <br>
+                    - Cancelacion gratuita <br>
+                    - Indemnizacion por perdida de equipaje o robo <br><br>
+                    <h3 class="text-center">200,00€</h3> <br>
+                    <input type="radio" name="Seguro" id="seguro1" value="seguro1" required>
                   </div>
                 </div>
               </div>
-              <div class="col">
-  
-                <div class="card mx-2 mb-4">
-                  <div class="card-header bg-warning text-dark">
-                    <h5>Sólo ida <i class="bi bi-arrow-right"></i></h5>
-                  </div>
-                  <div class="card-body">
-                    
-                    <form method="post" action="buscarVueloIda.html">
-                      <div class="form-floating">
-                          <input type="text" name="origen" value="" class="form-control mb-3" id="floatingOrigen" placeholder="Origen" required/>
-                          <label for="floatingOrigen">Origen</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                          <input type="text" name="destino" value="" class="form-control" id="floatingDestino" placeholder="Destino" required/>
-                          <label for="floatingDestino">Destino</label>
-                      </div>
-                      <div class="form-floating mb-3">
-                        <input type="date" name="ida" value="" class="form-control" id="floatingIda" placeholder="Ida" required/>
-                        <label for="floatingIda">Ida</label>
-                      </div>
-                      <div class="form-floating">
-                        <input type="number" name="origen" value="" class="form-control mb-3" id="floatingPasajeros" placeholder="Alias" required/>
-                        <label for="floatingPasajeros">Pasajeros</label>
-                      </div>
-                      <input type="submit" value="Buscar vuelos" class="btn btn-warning mb-3"/>
-                    </form>
-            
+              
+                <div class="col">
+                  <div class="card mx-2 mb-4">
+                    <div class="card-header bg-warning text-dark">
+                      <h5>Seguro Medio</h5>
+                    </div>
+                    <div class="card-body">
+                      - Contiene asistencia medica en viajes <br>
+                      - Cancelacion gratuita <br>
+                      - Indemnizacion por perdida de equipaje o robo <br><br>
+                      <h3 class="text-center">94,99€</h3> <br>
+                      <input type="radio" name="Seguro" id="seguro2" value="seguro2" required>
+                    </div>
                   </div>
                 </div>
-              </div>
-          </div>
+                  <div class="col">
+                    <div class="card mx-2 mb-4">
+                      <div class="card-header bg-warning text-dark">
+                        <h5>Seguro Basico</h5>
+                      </div>
+                      <div class="card-body">
+                        - Cancelacion abonando el 50% del billete <br><br>
+                        <h3 class="text-center">Gratuito</h3> <br>
+                        <input type="radio" name="Seguro" id="seguro3" value="seguro3" required>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </form>
+        </div>
+            
+              
     </main>
 </body>
 </html>
