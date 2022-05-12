@@ -15,10 +15,13 @@
             <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
               <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
                 <img src="img/airplane.png" class="bi me-2" width="40" height="32" alt="Icono de la web representado por un avión de papel">
+                <h4>Airplane</h4>
               </a>
         
               <div class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <input type="search" class="form-control" placeholder="¿Alguna pregunta?" aria-label="Search">
+                <form method="post" action="FAQs.html">
+                  <input type="search" class="form-control" placeholder="¿Alguna pregunta?" aria-label="Search">
+                </form>
               </div>
         
               <div class="col-md-3 text-end">
@@ -43,73 +46,109 @@
           </div>
         </div>
 
-        <div class="container">
-          <div class="row align-items-start">
-            <div class="col">
-              <div class="card mx-2 mb-4">
-                <div class="card-header bg-warning text-dark">
-                  <h5>Ida y vuelta <i class="bi bi-arrow-left-right"></i></h5>
-                </div>
-                <div class="card-body">
-                  
-                  <form method="post" action="buscarVuelosIdaYVuelta.html">
-                    <div class="form-floating">
-                        <input type="text" name="origen" value="" class="form-control mb-3" id="floatingOrigen" placeholder="Origen" required/>
-                        <label for="floatingOrigen">Origen</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="text" name="destino" value="" class="form-control" id="floatingDestino" placeholder="Destino" required/>
-                        <label for="floatingDestino">Destino</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                      <input type="date" name="ida" value="" class="form-control" id="floatingIda" placeholder="Ida" required/>
-                      <label for="floatingIda">Ida</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                      <input type="date" name="ida" value="" class="form-control" id="floatingVuelta" placeholder="Vuelta" required/>
-                      <label for="floatingVuelta">Vuelta</label>
-                    </div>
-                    <div class="form-floating">
-                      <input type="number" name="origen" value="" class="form-control mb-3" id="floatingPasajeros" placeholder="Alias" required/>
-                      <label for="floatingPasajeros">Pasajeros</label>
-                    </div>
-                    <input type="submit" value="Buscar vuelos" class="btn btn-warning mb-3"/>
-                  </form>
+        <div class="row align-items-center">
+          <div class="col">
+              
+          </div>
           
-                </div>
-              </div>
-            </div>
-            <div class="col">
+          <div class="col-lg-5 col-sm-12">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-dark active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Ida y vuelta <i class="bi bi-arrow-left-right"></i></button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link text-dark" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Ida <i class="bi bi-arrow-right"></i></button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                    
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                
+                <div class="card mx-2 mb-4">
+                  <div class="card-body">
 
-              <div class="card mx-2 mb-4">
-                <div class="card-header bg-warning text-dark">
-                  <h5>Sólo ida <i class="bi bi-arrow-right"></i></h5>
+                    <form method="post" action="buscarVuelosIdaYVuelta.html">
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-floating">
+                            <input type="text" name="origen" value="" class="form-control mb-3" id="floatingOrigen" placeholder="Origen" required/>
+                            <label for="floatingOrigen">Origen</label>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-floating mb-3">
+                            <input type="text" name="destino" value="" class="form-control" id="floatingDestino" placeholder="Destino" required/>
+                            <label for="floatingDestino">Destino</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-floating mb-3">
+                            <input type="date" name="ida" value="" class="form-control" id="floatingIda" placeholder="Ida" required/>
+                            <label for="floatingIda">Ida</label>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-floating mb-3">
+                            <input type="date" name="ida" value="" class="form-control" id="floatingVuelta" placeholder="Vuelta" required/>
+                            <label for="floatingVuelta">Vuelta</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-floating">
+                        <input type="number" name="origen" value="1" class="form-control mb-3" id="floatingPasajeros" placeholder="Alias" required/>
+                        <label for="floatingPasajeros">Pasajeros</label>
+                      </div>
+                      <input type="submit" value="Buscar vuelos" class="btn btn-warning mb-3"/>
+                    </form>
+            
+                  </div>
                 </div>
-                <div class="card-body">
-                  
-                  <form method="post" action="buscarVueloIda.html">
-                    <div class="form-floating">
-                        <input type="text" name="origen" value="" class="form-control mb-3" id="floatingOrigen" placeholder="Origen" required/>
-                        <label for="floatingOrigen">Origen</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                        <input type="text" name="destino" value="" class="form-control" id="floatingDestino" placeholder="Destino" required/>
-                        <label for="floatingDestino">Destino</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                      <input type="date" name="ida" value="" class="form-control" id="floatingIda" placeholder="Ida" required/>
-                      <label for="floatingIda">Ida</label>
-                    </div>
-                    <div class="form-floating">
-                      <input type="number" name="origen" value="" class="form-control mb-3" id="floatingPasajeros" placeholder="Alias" required/>
-                      <label for="floatingPasajeros">Pasajeros</label>
-                    </div>
-                    <input type="submit" value="Buscar vuelos" class="btn btn-warning mb-3"/>
-                  </form>
-          
+    
+              </div>
+
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                
+                <div class="card mx-2 mb-4">
+                  <div class="card-body">
+  
+                    <form method="post" action="buscarVuelosIdaYVuelta.html">
+                      <div class="row">
+                        <div class="col">
+                          <div class="form-floating">
+                            <input type="text" name="origen" value="" class="form-control mb-3" id="floatingOrigen" placeholder="Origen" required/>
+                            <label for="floatingOrigen">Origen</label>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="form-floating mb-3">
+                            <input type="text" name="destino" value="" class="form-control" id="floatingDestino" placeholder="Destino" required/>
+                            <label for="floatingDestino">Destino</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="date" name="ida" value="" class="form-control" id="floatingIda" placeholder="Ida" required/>
+                        <label for="floatingIda">Ida</label>
+                      </div>
+                      <div class="form-floating">
+                        <input type="number" name="origen" value="1" class="form-control mb-3" id="floatingPasajeros" placeholder="Alias" required/>
+                        <label for="floatingPasajeros">Pasajeros</label>
+                      </div>
+                      <input type="submit" value="Buscar vuelos" class="btn btn-warning mb-3"/>
+                    </form>
+            
+                  </div>
                 </div>
+    
               </div>
             </div>
+          </div>
+
+          <div class="col">
+              
+          </div>
         </div>
       </section>
     
