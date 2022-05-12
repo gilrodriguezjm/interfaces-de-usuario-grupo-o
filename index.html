@@ -10,7 +10,7 @@
     <title>Inicio</title>
 </head>
 <body>
-    <div class="bg-light">
+    <div class="bg-secondary">
         <div class="container">
             <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
               <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
@@ -31,6 +31,10 @@
             </header>
         </div>
     </div>
+
+    <template>
+      <p>template</p>
+    </template>
 
     <main>
       <section class="bg-img py-5" style="background-image: url('img/bg.jpg'); background-position: center;">
@@ -453,5 +457,14 @@
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script>
+      
+          var temp = document.getElementsByTagName("template")[0];
+          var clon = temp.content.cloneNode(true);
+          document.body.appendChild(clon);
+
+    </script>
+
 </body>
 </html>
