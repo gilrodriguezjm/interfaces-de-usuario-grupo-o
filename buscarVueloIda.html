@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>buscarVueloIda</title>
+</head>
+<body>
+    <div class="bg-dark">
+        <div class="container">
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+              <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                <img src="img/airplane.png" class="bi me-2" width="40" height="32" alt="Icono de la web representado por un avión de papel">
+                <h4 class="text-light">Airplane</h4>
+              </a>
+        
+              <div class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <form method="post" action="FAQs.html">
+                  <input type="search" class="form-control" placeholder="¿Alguna pregunta?" aria-label="Search">
+                </form>
+                <a href="FAQs.html">
+                  <button type="button" class="btn btn-light ms-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                    </svg>
+                  </button>
+                </a>
+              </div>
+              
+              <div class="col-md-3 text-end">
+                <a href="perfil.html" class="btn btn-warning">Mi perfil</a>
+                <a href="index.html" class="btn btn-warning">Cerrar Sesión</a>
+              </div>
+            </header>
+        </div>
+    </div>
+
+    <main class="py-5">
+        <div class="container">
+            <form method="post" action="seguros.html">
+                <article class="mb-3">
+                    <div class="row" >
+                        <h2 class="text-center">Ida Barcelona (BCN) - Lugo(LCG) 05/05/2022</h2>
+                    </div>
+        
+                    <section>
+                        <div class="row border" >
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-5">
+                                    <p id="grupoO"> Airplane</p>
+                                </div>
+                                <div class="col-5 text-center">
+                                    <p id="duracionVuelo"> 1h 50 </p>
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
+                            <div class="col-1 text-center">
+                                <input type="radio" name="Ida" id="ida1" value="ida1" required>
+                            </div>
+                            <div class="col-2">
+                                <h4 id="salida">06:50 </h4>
+                            </div>
+                            <div class="col-5 text-center"></div>
+                            <div class="col-2">
+                                <h4 id="llegada">8:40</h4>
+                            </div>
+                            <div class="col-2">
+                                <h5 id="precio">64.99 EUR</h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-5">
+                                    <p id="siglasIda"> BCN </p>
+                                </div>
+                                <div class="col-5 text-center">
+                                    <p id="siglasVuelta"> LCG </p>
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <section>
+                        <div class="row border" >
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-5">
+                                    <p id="grupoO"> Airplane</p>
+                                </div>
+                                <div class="col-5 text-center">
+                                    <p id="duracionVuelo"> 1h 50 </p>
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
+                            <div class="col-1 text-center">
+                                <input type="radio" name="Ida" id="ida2" value="ida2" required>
+                            </div>
+                            <div class="col-2">
+                                <h4 id="salida">13:55 </h4>
+                            </div>
+                            <div class="col-5 ">
+                            </div>
+                            <div class="col-2">
+                                <h4 id="llegada">15:45</h4>
+                            </div>
+                            <div class="col-2">
+                                <h5 id="precio">50.99 EUR</h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-5">
+                                    <p id="siglasIda"> BCN </p>
+                                </div>
+                                <div class="col-5 text-center">
+                                    <p id="siglasVuelta"> LCG </p>
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <section>
+                        <div class="row border" >
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-5">
+                                    <p id="grupoO"> Airplane</p>
+                                </div>
+                                <div class="col-5 text-center">
+                                    <p id="duracionVuelo"> 1h 50 </p>
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
+                            <div class="col-1 text-center">
+                                <input type="radio" name="Ida" id="ida3" value="ida3" required>
+                            </div>
+                            <div class="col-2">
+                                <h4 id="salida">21:00 </h4>
+                            </div>
+                            <div class="col-5 ">
+                            </div>
+    
+                            <div class="col-2">
+                                <h4 id="llegada">22:50</h4>
+                            </div>
+                            <div class="col-2">
+                                <h5 id="precio">80.99 EUR</h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-5">
+                                    <p id="siglasIda"> BCN </p>
+                                </div>
+                                <div class="col-5 text-center">
+                                    <p id="siglasVuelta"> LCG </p>
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+                <section>
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4 text-center">
+                                <input class="btn btn-warning mb-3" id="submit" type="submit" value="Confirmar billetes">                                
+                            </div>
+                            <div class="col-4"></div>
+                        </div>
+                    </section>
+            </form>
+        </div>
+    </main>
+
+    <div class="container border-top mt-5">
+        <footer class="py-5">
+          <div class="row">
+            <div class="col-xl-3 col-sm-6 mb-2">
+              <h5>Compañia</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted">Quiénes somos</a></li>
+                <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted">Empleo</a></li>
+                <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted">Móvil</a></li>
+                <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted">Códigos promocionales</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-xl-3 col-sm-6 mb-2">
+              <h5>Ayuda</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="FAQs.html" class="nav-link p-0 text-muted">Preguntas frecuentes</a></li>
+                <li class="nav-item mb-2"><a href="comoFuncionaNuestraWeb.html" class="nav-link p-0 text-muted">Cómo funciona nuestra web</a></li>
+                <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted">Configuración de privacidad</a></li>
+                <li class="nav-item mb-2"><a href="terminosYCondiciones.html" class="nav-link p-0 text-muted">Términos y condiciones</a></li>
+              </ul>
+            </div>
+      
+            <div class="col-xl-3 col-sm-12 mb-2">
+              <h5>Más</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted">Tasas de aerolinias</a></li>
+                <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted">Aerolinias</a></li>
+                <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted">Tips</a></li>
+                <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted">Blog</a></li>
+              </ul>
+            </div>
+  
+            <div class="col-xl-3 col-sm-12 mb-2">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h5 class="my-0 fw-normal">Atención al cliente <i class="bi bi-info-circle-fill"></i></h5>
+                </div>
+                <div class="card-body">
+                  <p>¿Tienes alguna duda? Contacta con nuestro centro de atención al cliente</p>
+                  <a href="atencionCliente.html" class="w-100 btn btn-lg btn-warning">Contactar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="d-flex justify-content-between py-4 my-4 border-top">
+            <div class="container">
+              <div class="row align-items-start">
+                <div class="col-6 justify-content-start">
+                  <p>© 2021 Company, Inc. All rights reserved. <img src="img/airplane.png" class="bi me-2" width="30" height="22" alt="Icono de la web representado por un avión de papel"></p>
+                </div>
+                <div class="col-6">
+                  <ul class="list-unstyled d-flex justify-content-end">
+                    <li class="ms-3"><a class="link-dark" href=""><i class="bi bi-twitter"></i></a></li>
+                    <li class="ms-3"><a class="link-dark" href=""><i class="bi bi-instagram"></i></a></li>
+                    <li class="ms-3"><a class="link-dark" href=""><i class="bi bi-facebook"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </footer>
+      </div>
+</body>
+</html>
