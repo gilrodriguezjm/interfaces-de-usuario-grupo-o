@@ -39,62 +39,83 @@
     </div>
 </div>
     <main class="my-5">
-        <div class="container text-center">
-          <form method="post" action="infoReserva.html">
-            <div class="row align-items-start">
-              <div class="col">
-                <div class="card mx-2 mb-4">
-                  <div class="card-header bg-warning text-dark">
-                    <h5>Seguro Premium</h5>
-                  </div>
-                  <div class="card-body">
-                    - Contiene asistencia medica en viajes <br>
-                    - Regreso anticipado y prolongación del seguro <br>
-                    - Teleconsulta medica <br>
-                    - Cancelacion gratuita <br>
-                    - Indemnizacion por perdida de equipaje o robo <br>
-                    <h3 class="text-center">200,00€</h3> <br>
-                    <input type="radio" name="Seguro" id="seguro1" value="seguro1" required>
-                  </div>
+      <div class="container">
+        <form method="post" action="infoReserva.html">
+            <article class="mb-3">
+                <div class="row" >
+                    <h2 class="text-center">Ida Barcelona (BCN) - Lugo(LCG) 05/05/2022</h2>
                 </div>
-              </div>
-              
-                <div class="col ">
-                  <div class="card mx-2 mb-4 height:100%">
-                    <div class="card-header bg-warning text-dark">
-                      <h5>Seguro Medio</h5>
-                    </div>
-                    <div class="card-body">
-                      - Contiene asistencia medica en viajes <br>
-                      - Cancelacion gratuita <br>
-                      - Indemnizacion por perdida de equipaje o robo <br>
-                      <h3 class="text-center">94,99€</h3> <br>
-                      <input type="radio" name="Seguro" id="seguro2" value="seguro2" required>
+                <div class="row">
+                  <div class="col"></div>
+                  <div class="col-10">
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group" id="seccionBotones">
+                      <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" required >
+                      <label class="btn" for="btnradio1">
+                        <div class="col" >
+                            <div class="card mx-2 mb-4">
+                              <div class="card-header bg-dark text-light">
+                                <h5>Seguro Premium</h5>
+                              </div>
+                              <div class="card-body">
+                                - Contiene asistencia medica en viajes <br>
+                                - Regreso anticipado y prolongación del seguro <br>
+                                - Teleconsulta medica <br>
+                                - Cancelacion gratuita <br>
+                                - Indemnizacion por perdida de equipaje o robo <br>
+                                <h3 class="text-center">200,00€</h3> <br>
+                              </div>
+                            </div>
+                        </div>
+                      </label>
+                    
+                      <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" required>
+                      <label class="btn " for="btnradio2">
+                        <div class="col ">
+                            <div class="card mx-2 mb-4 height:100%">
+                              <div class="card-header bg-warning text-dark">
+                                <h5>Seguro Medio</h5>
+                              </div>
+                              <div class="card-body">
+                                - Contiene asistencia medica en viajes <br>
+                                - Cancelacion gratuita <br>
+                                - Indemnizacion por perdida de equipaje o robo <br>
+                                <h3 class="text-center">94,99€</h3> <br>
+                              </div>
+                            </div>
+                        </div>
+                      </label>
+                    
+                      <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" required>
+                      <label class="btn" for="btnradio3">
+                        <div class="col">
+                            <div class="card mx-2 mb-4">
+                              <div class="card-header bg-dark text-light">
+                                <h5>Seguro Basico</h5>
+                              </div>
+                              <div class="card-body">
+                                - Cancelacion abonando el 50% del billete <br>
+                                <h3 class="text-center">Gratuito</h3> <br>
+                              </div>
+                            </div>
+                        </div>
+                      </label>
                     </div>
                   </div>
+                  <div class="col"></div>
                 </div>
-                <div class="col height:100%">
-                  <div class="card mx-2 mb-4">
-                    <div class="card-header bg-warning text-dark">
-                      <h5>Seguro Basico</h5>
-                    </div>
-                    <div class="card-body">
-                      - Cancelacion abonando el 50% del billete <br>
-                      <h3 class="text-center">Gratuito</h3> <br>
-                      <input type="radio" name="Seguro" id="seguro3" value="seguro3" required>
-                    </div>
-                  </div>
-                </div>
-            </div>
-            <div class="row align-items-center">
-              <div class="col-4"></div>
-              <div class="col-4">
-                <input class="btn btn-warning mb-3" type="submit" value="Confirmar" >
-              </div>
-              <div class="col-4"></div>
-            </div>
-          </form>
-        </div>
+                                    
+            </article>
+            <section>
+                    <div class="row align-items-center">
+                        <div class="col-4"></div>
+                        <div class="col-4 text-center">
+                          <input class="btn btn-warning mb-3" id="submit" type="submit" value="Confirmar" >
+                        </div>
+                        <div class="col-4"></div>
+                      </div>
+            </section>
+        </form>
+      </div>
             
               
     </main>
