@@ -10,291 +10,343 @@
     <title>buscarVueloIdaYVuelta</title>
 </head>
 <body>
-    <div class="bg-dark">
-        <div class="container">
-            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
-              <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                <img src="img/airplane.png" class="bi me-2" width="40" height="32" alt="Icono de la web representado por un avión de papel">
-                <h4 class="text-light">Airplane</h4>
-              </a>
-        
-              <div class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <form method="post" action="FAQs.html">
-                  <input type="search" class="form-control" placeholder="¿Alguna pregunta?" aria-label="Search">
-                </form>
-                <a href="FAQs.html">
-                  <button type="button" class="btn btn-light ms-1">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
-                    </svg>
-                  </button>
-                </a>
+  <div class="bg-dark fixed-top">
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+          <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <img src="img/airplane.png" class="bi me-2" width="40" height="32" alt="Icono de la web representado por un avión de papel">
+            <h4 class="text-light">Airplane</h4>
+          </a>
+    
+          <div class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <form method="post" action="FAQs.html">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-7">
+                    <input id="preguntas" type="search" class="form-control" title="¿Alguna pregunta?" placeholder="¿Alguna pregunta?" aria-label="Search">
+                  </div>
+                  <div class="col-5">
+                    <button type="submit" class="btn btn-light ms-1">
+                      Buscar
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
               </div>
-              
-              <div class="col-md-3 text-end">
-                <a href="perfil.html" class="btn btn-warning">Mi perfil</a>
-                <a href="index.html" class="btn btn-warning">Cerrar Sesión</a>
-              </div>
-            </header>
-        </div>
-    </div>
+            </form>
+          </div>
 
-    <main class="py-5">
+          <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              Viajar
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item active" href="index2.html">Buscar vuelo</a></li>
+              <li><a class="dropdown-item" href="index2.html#moda">Ciudades de moda</a></li>
+              <li><a class="dropdown-item" href="index2.html#ofertas">Ofertas</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-md-3 text-end">
+            <a href="reservas.html" class="btn btn-light me-1">Reservas</a>
+            <a href="perfil.html" class="btn btn-light me-1">Perfil</a>
+            <a href="index.html" class="btn btn-warning">Cerrar Sesión</a>
+          </div>
+        </header>
+    </div>
+  </div>
+
+    <main class="my-5">
         <div class="container">
             <form method="post" action="seguros.html">
                 <article class="mb-3">
-                    <div class="row" >
-                        <h2 id="textoIda" class="text-center">Ida Barcelona (BCN) - Lugo(LCG) 05/05/2022</h2>
+                    <div class="row mb-3" >
+                        <h2 class="text-center">Ida Barcelona (BCN) - Lugo(LCG) 05/05/2022</h2>
                     </div>
-        
-                    <section>
-                        <div class="row border" >
-                            <div class="row">
-                                <div class="col-1"></div>
-                                <div class="col-5">
-                                    <p id="grupoO"> Airplane</p>
-                                </div>
-                                <div class="col-5 text-center">
-                                    <p id="duracionVuelo"> 1h 50 </p>
-                                </div>
-                                <div class="col-1"></div>
-                            </div>
-                            <div class="col-1 text-center">
-                                <input type="radio" name="Ida" id="ida1" value="ida1" required>
-                            </div>
-                            <div class="col-2">
-                                <h4 id="salida">06:50 </h4>
-                            </div>
-                            <div class="col-5 text-center"></div>
-                            <div class="col-2">
-                                <h4 id="llegada">8:40</h4>
-                            </div>
-                            <div class="col-2">
-                                <h5 id="precio">64.99 EUR</h5>
-                            </div>
-                            <div class="row">
-                                <div class="col-1"></div>
-                                <div class="col-5">
-                                    <p id="siglasIda"> BCN </p>
-                                </div>
-                                <div class="col-5 text-center">
-                                    <p id="siglasVuelta"> LCG </p>
-                                </div>
-                                <div class="col-1"></div>
-                            </div>
+                    <div class="row">
+                      <div class="col"></div>
+                      <div class="col-10">
+                        <div class="btn-group-vertical" role="group" aria-label="Basic radio toggle button group" id="seccionBotones">
+                          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" required >
+                          <label class="btn" for="btnradio1">
+                            <section>
+                              <div class="row border" >
+                                  <div class="row">
+                                      <div class="col-2 text-center">
+                                          <p id="grupoO"> Airplane</p>
+                                      </div>
+                                      <div class="col-6"></div>
+                                      <div class="col-2 text-center">
+                                          <p id="duracionVuelo"> 1h 50 </p>
+                                      </div>
+                                      <div class="col-2"></div>
+                                      
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-2">
+                                      <h4 id="salida">13:55 </h4>
+                                    </div>
+                                    <div class="col-6 ">
+                                    </div>
+                                    <div class="col-2">
+                                        <h4 id="llegada">15:45</h4>
+                                    </div>
+                                    <div class="col-2">
+                                        <h5 id="precio">50.99 EUR</h5>
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="row">
+                                      
+                                      <div class="col-2 text-center">
+                                          <p id="siglasIda"> BCN </p>
+                                      </div>
+                                      <div class="col-6"></div>
+                                      <div class="col-2 text-center">
+                                          <p id="siglasVuelta"> LCG </p>
+                                      </div>
+                                      <div class="col-2"></div>
+                                  </div>
+                              </div>
+                            </section>
+                          </label>
+                        
+                          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" required>
+                          <label class="btn " for="btnradio2">
+                              <section>
+                                  <div class="row border" >
+                                      <div class="row">
+                                          <div class="col-2 text-center">
+                                              <p id="grupoO"> Airplane</p>
+                                          </div>
+                                          <div class="col-6"></div>
+                                          <div class="col-2 text-center">
+                                              <p id="duracionVuelo"> 1h 50 </p>
+                                          </div>
+                                          <div class="col-2"></div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-2">
+                                              <h4 id="salida">21:00 </h4>
+                                          </div>
+                                          <div class="col-6 ">
+                                          </div>
+                  
+                                          <div class="col-2">
+                                              <h4 id="llegada">22:50</h4>
+                                          </div>
+                                          <div class="col-2">
+                                              <h5 id="precio">80.99 EUR</h5>
+                                          </div>
+                                      </div>
+  
+                                      <div class="row">
+                                          <div class="col-2 text-center">
+                                              <p id="siglasIda"> BCN </p>
+                                          </div>
+                                          <div class="col-6"></div>
+                                          <div class="col-2 text-center">
+                                              <p id="siglasVuelta"> LCG </p>
+                                          </div>
+                                          <div class="col-2"></div>
+                                      </div>
+                                  </div>
+                              </section>
+                          </label>
+                        
+                          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" required>
+                          <label class="btn" for="btnradio3">
+                            <section>
+                              <div class="row border" >
+                                  <div class="row">
+                                      <div class="col-2 text-center">
+                                          <p id="grupoO"> Airplane</p>
+                                      </div>
+                                      <div class="col-6"></div>
+                                      <div class="col-2 text-center">
+                                          <p id="duracionVuelo"> 1h 50 </p>
+                                      </div>
+                                      <div class="col-2"></div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-2">
+                                      <h4 id="salida">00:00 </h4>
+                                    </div>
+                                    <div class="col-6 "></div>
+                                    <div class="col-2">
+                                      <h4 id="llegada">03:50</h4>
+                                    </div>
+                                    <div class="col-2">
+                                      <h5 id="precio">20.99 EUR</h5>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-2 text-center">
+                                          <p id="siglasIda"> BCN </p>
+                                      </div>
+                                      <div class="col-6"></div>
+                                      <div class="col-2 text-center">
+                                          <p id="siglasVuelta"> LCG </p>
+                                      </div>
+                                      <div class="col-2"></div>
+                                  </div>
+                              </div>
+                            </section>
+                          </label>
                         </div>
-                    </section>
-        
-                    <section>
-                        <div class="row border" >
-                            <div class="row">
-                                <div class="col-1"></div>
-                                <div class="col-5">
-                                    <p id="grupoO"> Airplane</p>
-                                </div>
-                                <div class="col-5 text-center">
-                                    <p id="duracionVuelo"> 1h 50 </p>
-                                </div>
-                                <div class="col-1"></div>
-                            </div>
-                            <div class="col-1 text-center">
-                                <input type="radio" name="Ida" id="ida2" value="ida2" required>
-                            </div>
-                            <div class="col-2">
-                                <h4 id="salida">13:55 </h4>
-                            </div>
-                            <div class="col-5 ">
-                            </div>
-                            <div class="col-2">
-                                <h4 id="llegada">15:45</h4>
-                            </div>
-                            <div class="col-2">
-                                <h5 id="precio">50.99 EUR</h5>
-                            </div>
-                            <div class="row">
-                                <div class="col-1"></div>
-                                <div class="col-5">
-                                    <p id="siglasIda"> BCN </p>
-                                </div>
-                                <div class="col-5 text-center">
-                                    <p id="siglasVuelta"> LCG </p>
-                                </div>
-                                <div class="col-1"></div>
-                            </div>
-                        </div>
-                    </section>
-        
-                    <section>
-                        <div class="row border" >
-                            <div class="row">
-                                <div class="col-1"></div>
-                                <div class="col-5">
-                                    <p id="grupoO"> Airplane</p>
-                                </div>
-                                <div class="col-5 text-center">
-                                    <p id="duracionVuelo"> 1h 50 </p>
-                                </div>
-                                <div class="col-1"></div>
-                            </div>
-                            <div class="col-1 text-center">
-                                <input type="radio" name="Ida" id="ida3" value="ida3" required>
-                            </div>
-                            <div class="col-2">
-                                <h4 id="salida">21:00 </h4>
-                            </div>
-                            <div class="col-5 ">
-                            </div>
-    
-                            <div class="col-2">
-                                <h4 id="llegada">22:50</h4>
-                            </div>
-                            <div class="col-2">
-                                <h5 id="precio">80.99 EUR</h5>
-                            </div>
-                            <div class="row">
-                                <div class="col-1"></div>
-                                <div class="col-5">
-                                    <p id="siglasIda"> BCN </p>
-                                </div>
-                                <div class="col-5 text-center">
-                                    <p id="siglasVuelta"> LCG </p>
-                                </div>
-                                <div class="col-1"></div>
-                            </div>
-                        </div>
-                    </section>
-                </article>
-        
-                <article class="mb-3">
-                    <div class="row" >
-                        <h2 class="text-center">Vuelta  Lugo(LCG) - Barcelona (BCN) 12/05/2022</h2>
+                      </div>
+                      <div class="col"></div>
                     </div>
-        
-                    <section>
-                        <div class="row border" >
-                            <div class="row">
-                                <div class="col-1"></div>
-                                <div class="col-5">
-                                    <p id="grupoO"> Airplane</p>
-                                </div>
-                                <div class="col-5 text-center">
-                                    <p id="duracionVuelo"> 1h 45 </p>
-                                </div>
-                                <div class="col-1"></div>
-                            </div>
-                            <div class="col-1 text-center">
-                                <input type="radio" name="Vuelta" id="vuelta1" value="vuelta1" required>
-                            </div>
-                            <div class="col-2">
-                                <h4 id="salida">08:10 </h4>
-                            </div>
-                            <div class="col-5 ">
-                            </div>
-                            <div class="col-2">
-                                <h4 id="llegada">09:55</h4>
-                            </div>
-                            <div class="col-2">
-                                <h5 id="precio">46.49 EUR</h5>
-                            </div>
-                            <div class="row">
-                                <div class="col-1"></div>
-                                <div class="col-5">
-                                    <p id="siglasIda"> LCG </p>
-                                </div>
-                                <div class="col-5 text-center">
-                                    <p id="siglasVuelta"> BCN </p>
-                                </div>
-                                <div class="col-1"></div>
-                            </div>
+
+                    <div class="row mt-5 mb-3" >
+                        <h2 class="text-center">Vuelta Barcelona (BCN) - Lugo(LCG) 05/05/2022</h2>
+                    </div>
+                    <div class="row">
+                      <div class="col"></div>
+                      <div class="col-10">
+                        <div class="btn-group-vertical" role="group" aria-label="Basic radio toggle button group" id="seccionBotones2">
+                          <input type="radio" class="btn-check" name="btnradio2" id="btnradio4" autocomplete="off" aria-checked="true" aria-pressed="mixed" required >
+                          <label class="btn" for="btnradio4">
+                            <section>
+                              <div class="row border" >
+                                  <div class="row">
+                                      <div class="col-2 text-center">
+                                          <p id="grupoO"> Airplane</p>
+                                      </div>
+                                      <div class="col-6"></div>
+                                      <div class="col-2 text-center">
+                                          <p id="duracionVuelo"> 1h 50 </p>
+                                      </div>
+                                      <div class="col-2"></div>
+                                      
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-2">
+                                      <h4 id="salida">13:55 </h4>
+                                    </div>
+                                    <div class="col-6 ">
+                                    </div>
+                                    <div class="col-2">
+                                        <h4 id="llegada">15:45</h4>
+                                    </div>
+                                    <div class="col-2">
+                                        <h5 id="precio">50.99 EUR</h5>
+                                    </div>
+                                  </div>
+                                  
+                                  <div class="row">
+                                      
+                                      <div class="col-2 text-center">
+                                          <p id="siglasIda"> BCN </p>
+                                      </div>
+                                      <div class="col-6"></div>
+                                      <div class="col-2 text-center">
+                                          <p id="siglasVuelta"> LCG </p>
+                                      </div>
+                                      <div class="col-2"></div>
+                                  </div>
+                              </div>
+                            </section>
+                          </label>
+                        
+                          <input type="radio" class="btn-check" name="btnradio2" id="btnradio5" autocomplete="off" aria-checked="true" required>
+                          <label class="btn " for="btnradio5">
+                              <section>
+                                  <div class="row border" >
+                                      <div class="row">
+                                          <div class="col-2 text-center">
+                                              <p id="grupoO"> Airplane</p>
+                                          </div>
+                                          <div class="col-6"></div>
+                                          <div class="col-2 text-center">
+                                              <p id="duracionVuelo"> 1h 50 </p>
+                                          </div>
+                                          <div class="col-2"></div>
+                                      </div>
+                                      <div class="row">
+                                          <div class="col-2">
+                                              <h4 id="salida">21:00 </h4>
+                                          </div>
+                                          <div class="col-6 ">
+                                          </div>
+                  
+                                          <div class="col-2">
+                                              <h4 id="llegada">22:50</h4>
+                                          </div>
+                                          <div class="col-2">
+                                              <h5 id="precio">80.99 EUR</h5>
+                                          </div>
+                                      </div>
+  
+                                      <div class="row">
+                                          <div class="col-2 text-center">
+                                              <p id="siglasIda"> BCN </p>
+                                          </div>
+                                          <div class="col-6"></div>
+                                          <div class="col-2 text-center">
+                                              <p id="siglasVuelta"> LCG </p>
+                                          </div>
+                                          <div class="col-2"></div>
+                                      </div>
+                                  </div>
+                              </section>
+                          </label>
+                        
+                          <input type="radio" class="btn-check" name="btnradio2" id="btnradio6" autocomplete="off" required aria-checked="true">
+                          <label class="btn" for="btnradio6">
+                            <section>
+                              <div class="row border" >
+                                  <div class="row">
+                                      <div class="col-2 text-center">
+                                          <p id="grupoO"> Airplane</p>
+                                      </div>
+                                      <div class="col-6"></div>
+                                      <div class="col-2 text-center">
+                                          <p id="duracionVuelo"> 1h 50 </p>
+                                      </div>
+                                      <div class="col-2"></div>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-2">
+                                      <h4 id="salida">00:00 </h4>
+                                    </div>
+                                    <div class="col-6 "></div>
+                                    <div class="col-2">
+                                      <h4 id="llegada">03:50</h4>
+                                    </div>
+                                    <div class="col-2">
+                                      <h5 id="precio">20.99 EUR</h5>
+                                    </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col-2 text-center">
+                                          <p id="siglasIda"> BCN </p>
+                                      </div>
+                                      <div class="col-6"></div>
+                                      <div class="col-2 text-center">
+                                          <p id="siglasVuelta"> LCG </p>
+                                      </div>
+                                      <div class="col-2"></div>
+                                  </div>
+                              </div>
+                            </section>
+                          </label>
                         </div>
-                    </section>
-        
-                    <section>
-                        <div class="row border" >
-                            <div class="row">
-                                <div class="col-1"></div>
-                                <div class="col-5">
-                                    <p id="grupoO"> Airplane</p>
-                                </div>
-                                <div class="col-5 text-center">
-                                    <p id="duracionVuelo"> 1h 45 </p>
-                                </div>
-                                <div class="col-1"></div>
-                            </div>
-                            <div class="col-1 text-center">
-                                <input type="radio" name="Vuelta" id="vuelta2" value="vuelta2" required>
-                            </div>
-                            <div class="col-2">
-                                <h4 id="salida">13:55 </h4>
-                            </div>
-                            <div class="col-5 ">
-                            </div>
-                            <div class="col-2">
-                                <h4 id="llegada">15:40</h4>
-                            </div>
-                            <div class="col-2">
-                                <h5 id="precio">46.49 EUR</h5>
-                            </div>
-                            <div class="row">
-                                <div class="col-1"></div>
-                                <div class="col-5">
-                                    <p id="siglasIda"> LCG </p>
-                                </div>
-                                <div class="col-5 text-center">
-                                    <p id="siglasVuelta"> BCN </p>
-                                </div>
-                                <div class="col-1"></div>
-                            </div>
-                        </div>
-                    </section>
-        
-                    <section>
-                        <div class="row border" >
-                            <div class="row">
-                                <div class="col-1"></div>
-                                <div class="col-5">
-                                    <p id="grupoO"> Airplane</p>
-                                </div>
-                                <div class="col-5 text-center">
-                                    <p id="duracionVuelo"> 1h 45 </p>
-                                </div>
-                                <div class="col-1"></div>
-                            </div>
-                            <div class="col-1 text-center">
-                                <input type="radio" name="Vuelta" id="vuelta3" value="vuelta3" required>
-                            </div>
-                            <div class="col-2">
-                                <h4 id="salida">23:45 </h4>
-                            </div>
-                            <div class="col-5 ">
-                            </div>
-                            <div class="col-2">
-                                <h4 id="llegada">01:30</h4>
-                            </div>
-                            <div class="col-2">
-                                <h5 id="precio">80.99 EUR</h5>
-                            </div>
-                            <div class="row">
-                                <div class="col-1"></div>
-                                <div class="col-5">
-                                    <p id="siglasIda"> LCG </p>
-                                </div>
-                                <div class="col-5 text-center">
-                                    <p id="siglasVuelta"> BCN </p>
-                                </div>
-                                <div class="col-1"></div>
-                            </div>
-                        </div>
-                    </section>
+                      </div>
+                      <div class="col"></div>
+                    </div>
+                                        
                 </article>
                 <section>
-                    <div class="row">
-                        <div class="col-4"></div>
-                        <div class="col-4 text-center">
-                            <input id="submit" type="submit" value="Confirmar billetes" class="btn btn-warning mb-3">                                
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <div class="col-4 text-center">
+                                <input class="btn btn-warning mb-3" id="submit" type="submit" value="Confirmar billetes">                                
+                            </div>
+                            <div class="col-4"></div>
                         </div>
-                        <div class="col-4"></div>
-                    </div>
                 </section>
             </form>
         </div>
@@ -365,11 +417,3 @@
       </div>
 </body>
 </html>
-
-<!--
-- Tambien se pueden hacer 2 listas con radio y que se tenga que elegir 1 opcion 
-para la ida y otro para la vuelta y un boton con submit para pasar a la siguiente pagina
-Otra opcion con js que compruebe que hay un boton de la ida y otro de la vuelta seleccionados
-
-- Cuando llegue a 450px de ancho que se cambie a columnas de 2(radio),3(hora salida),3(hora llegada),4(precio)
--->
