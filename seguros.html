@@ -60,94 +60,94 @@
     </div>
   </div>
 
-    <main class="my-5">
+<main class="py-5">
       <div class="container">
-        <form method="post" action="infoReserva.html">
-            <article class="mb-3">
-              <div class="container mt-5">
-                <section class="bg-img pt-5">
-                  <div class="container mb-4">
-                    <div class="row align-items-center">
-                      <div class="col">
-                        <h1 class="text-center">Ida Barcelona (BCN) - Lugo(LCG) 05/05/2022</h1>
-                      </div>
-                    </div>
-                  </div>
-                </section>
+        <form method="post" action="billeteIV.html">
+            <div class="row">
+              <div class="col"></div>
+              <div class="col-10">
                 <div class="row">
-                  <div class="col"></div>
-                  <div class="col-10">
-                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group" id="grupoDeSeguros">
-                      <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" required >
-                      <label class="btn" for="btnradio1">
-                        <div class="col" id="columna1" >
-                            <div class="card mx-2 mb-4">
-                              <div class="card-header bg-dark text-light">
-                                <h5>Seguro Premium</h5>
-                              </div>
-                              <div class="card-body">
-                                - Contiene asistencia medica en viajes <br>
-                                - Regreso anticipado y prolongación del seguro <br>
-                                - Teleconsulta medica <br>
-                                - Cancelacion gratuita <br>
-                                - Indemnizacion por perdida de equipaje o robo <br><br>
-                                <h3 class="text-center">200,00€</h3> <br>
-                              </div>
-                            </div>
+                  <div class="col-4">
+                    <label class="btn" for="btnradio1">
+                      <div class="card mx-2 mb-4">
+                        <div class="card-header bg-dark text-light">
+                          <h5> Seguro Premium</h5>
                         </div>
-                      </label>
-                    
-                      <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" required >
-                      <label class="btn " for="btnradio2">
-                        <div class="col" id="columna2">
-                            <div class="card mx-2 mb-4" id="tarjeta2">
-                              <div class="card-header bg-warning text-dark">
-                                <h5>Seguro Medio</h5>
-                              </div>
-                              <div class="card-body">
-                                - Contiene asistencia medica en viajes <br>
-                                - Cancelacion gratuita <br>
-                                - Indemnizacion por perdida de equipaje o robo <br><br><br><br><br>
-                                <h3 class="text-center">94,99€</h3> <br>
-                              </div>
-                            </div>
+                        <div class="card-body">
+                          - Contiene asistencia medica en viajes <br>
+                          - Regreso anticipado y prolongación del seguro <br>
+                          - Teleconsulta medica <br>
+                          - Cancelacion gratuita <br>
+                          - Indemnizacion por perdida de equipaje o robo <br><br>
+                          <h3 class="text-center">200,00€</h3> <br>
                         </div>
-                      </label>
-                    
-                      <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" required>
-                      <label class="btn" for="btnradio3">
-                        <div class="col" id="columna3">
-                            <div class="card mx-2 mb-4">
-                              <div class="card-header bg-dark text-light">
-                                <h5>Seguro Basico</h5>
-                              </div>
-                              <div class="card-body">
-                                - Cancelacion abonando el 50% del billete <br><br><br><br><br><br><br>
-                                <h3 class="text-center">Gratuito</h3> <br>
-                              </div>
-                            </div>
+                        <div class="row text-center">
+                          <input type="radio"  name="btnradio" id="btnradio1"  required >
                         </div>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="col"></div>
-                </div>
-                                    
-            </article>
-            <section>
-                    <div class="row align-items-center">
-                        <div class="col-4"></div>
-                        <div class="col-4 text-center">
-                          <input class="btn btn-warning mb-3" id="submit" type="submit" value="Confirmar" >
-                        </div>
-                        <div class="col-4"></div>
+                        <br>
                       </div>
+                    </label>
+                  </div>
+                  <div class="col-4">
+                    <label class="btn " for="btnradio2">
+                      <div class="card mx-2 mb-4" >
+                        <div class="card-header bg-warning text-dark">
+                          <h5> Seguro Medio</h5>
+                        </div>
+                        <div class="card-body">
+                          - Contiene asistencia medica en viajes <br>
+                          - Cancelacion gratuita <br>
+                          - Indemnizacion por perdida de equipaje o robo <br><br><br><br><br>
+                          <h3 class="text-center">94,99€</h3> <br>
+                        </div>
+                        <div class="row text-center">
+                          <input type="radio"  name="btnradio" id="btnradio2"  required >
+                        </div>
+                        <br>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-4">
+                    <label class="btn" for="btnradio3">
+                      <div class="card mx-2 mb-4">
+                        <div class="card-header bg-dark text-light">
+                          <h5>Seguro Basico</h5>
+                        </div>
+                        <div class="card-body">
+                          - Cancelacion abonando el 50% del billete <br><br><br><br><br><br><br><br>
+                          <h3 class="text-center">Gratuito</h3> <br>
+                        </div>
+                        <div class="row text-center" >
+                          <input type="radio"   name="btnradio" id="btnradio3"  required>
+                        </div>
+                        <br>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="col"></div>
+            </div>
+            <section>
+              <div class="row align-items-center">
+                  <div class="col-4"></div>
+                  <div class="col-4 text-center">
+                    <input class="btn btn-warning mb-3" id="submit" type="submit" value="Confirmar" >
+                  </div>
+                  <div class="col-4"></div>
+                </div>
             </section>
         </form>
-      </div>
-            
-              
+      </div>  
+      
     </main>
+
+    
+    
+    
+    
+    
+    
 
 
     <div class="container border-top mt-5">
