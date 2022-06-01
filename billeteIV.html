@@ -175,15 +175,34 @@
         </div>
 
         <div class="col-7 text-center">
-          <a href="#" class="btn btn-warning me-3">Descargar</a>
+          <a href="billetes/billetes.pdf" class="btn btn-warning me-3" download="billetes.pdf" target="_blank">Descargar</a>
           <a href="#" class="btn btn-info me-3">Enviar por correo</a>          
-          <a href="#" class="btn btn-danger">Cancelar</a>
+          <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Cancelar</a>
         </div>
 
         <div class="col">
 
         </div>
       </section>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">CANCELACIÓN DE BILLETES</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <b>¿Estás seguro de que quieres cancelar los billetes?</b> El dinero se devolverá en función del seguro escogido
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Volver</button>
+              <a href="reservasEliminada.html" type="button" class="btn btn-danger">Sí, estoy seguro</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <footer class="container border-top mt-5 py-5">
