@@ -11,3 +11,9 @@
 #seccionBotones2{
     width: 100%;
 }
+
+
+.content-input input[type=radio]:checked + i:before{
+	background-color: aqua;
+    color: aqua;
+}
