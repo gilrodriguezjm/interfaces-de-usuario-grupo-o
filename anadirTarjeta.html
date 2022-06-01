@@ -59,7 +59,77 @@
     </div>
 
     <main class="my-5">
-      
+      <section class="bg-img pt-5">
+        <div class="container mb-4">
+          <div class="row align-items-center">
+            <div class="col">
+            </div>
+            <div class="col-8">
+              <h1 class="text-center" style="color: #000000;">Añadir tarjeta de crédito</h1>
+            </div>
+            <div class="col">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col">
+            
+          </div>
+
+          <div class="col-5">
+
+            <form method="post" action="perfilCompletoTarjeta.html">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingNombre" placeholder="Nombre" required>
+                <label for="floatingNombre">Nombre completo de la tarjeta*</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingNum" placeholder="Número de la tarjeta"pattern="[0-9] [0-9] [0-9] [0-9]" required>
+                <label for="floatingNum">Número de la tarjeta (0000 0000 0000 000)*
+                    <img src="https://i.imgur.com/2ISgYja.png" width="30">
+                    <img src="https://i.imgur.com/W1vtnOV.png" width="30">
+                    <img src="https://i.imgur.com/35tC99g.png" width="30">
+                </label>
+              </div>
+
+              <div class="row g-2">
+                <div class="col-md">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingFecha" placeholder="Fecha de expiración" pattern="[0-9][0-9]/[0-9][0-9]" required>
+                    <label for="floatingFecha">Fecha de expiración (MM/AA)*</label>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="form-floating">
+                    <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingFecha" placeholder="Fecha de expiración" pattern="[0-9][0-9][0-9]" required>
+                      <label for="floatingFecha">CVV*</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <input class="btn btn-warning" type="submit" value="Añadir tarjeta">
+              </div>
+            </form>
+
+            <div class="text-center">
+              <h3 class="mt-5 mb-2">¿Qué es el CVV?</h3>
+              <img src="img/cvv.png" width="500px"></img>
+            </div>
+          </div>
+
+          <div class="col">
+            
+          </div>
+        </div>
+      </div>
+
+
     </main>
 
     <footer class="container border-top mt-5 py-5">
