@@ -7,83 +7,151 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="icon" type="image/x-icon" href="img/airplane.png">
-    <title>Inicio</title>
+    <title>Atención al cliente</title>
 </head>
 <body>
-    <div class="bg-secondary">
-      <div class="container">
-          <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
-            <a href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-              <img src="img/airplane.png" class="bi me-2" width="40" height="32" alt="Icono de la web representado por un avión de papel">
-            </a>
-      
-            <div class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-              <input type="search" class="form-control" placeholder="¿Alguna pregunta?" aria-label="Search">
-            </div>
-      
-            <div class="col-md-3 text-end">
-              <a href="index.html" class="btn btn-warning">Cerrar Sesión</a>
-            </div>
-          </header>
-      </div>
+  <div class="bg-dark fixed-top">
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
+          <a href="index3.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+            <img src="img/airplane.png" class="bi me-2" width="40" height="32" alt="Icono de la web representado por un avión de papel">
+            <h4 class="text-light">Airplane</h4>
+          </a>
+    
+          <div class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+            <form method="post" action="FAQs.html">
+              <div class="container">
+                <div class="row align-items-center">
+                  <div class="col-7">
+                    <input id="preguntas" type="search" class="form-control" title="¿Alguna pregunta?" placeholder="¿Alguna pregunta?" aria-label="Search">
+                  </div>
+                  <div class="col-5">
+                    <button type="submit" class="btn btn-light ms-1">
+                      Buscar
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="dropdown">
+            <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+              Viajar
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item active" href="index3.html">Buscar vuelo</a></li>
+              <li><a class="dropdown-item" href="index3.html#moda">Ciudades de moda</a></li>
+              <li><a class="dropdown-item" href="index3.html#ofertas">Ofertas</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-md-3 text-end">
+            <a href="reservas.html" class="btn btn-light me-1">Reservas</a>
+            <a href="perfilCompletoTarjeta.html" class="btn btn-light me-1">Perfil</a>
+            <a href="index.html" class="btn btn-warning">Cerrar Sesión</a>
+          </div>
+        </header>
+    </div>
   </div>
-<main>
+
+  <main class="mt-5">
+    <section class="pt-5">
+      <div class="container">
+        <div class="col">
+          <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index3.html">Inicio</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Atención al cliente</li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="col">
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-img pb-5">
+      <div class="container mb-4">
+        <div class="row align-items-center">
+          <div class="col">
+          </div>
+          <div class="col">
+            <h1 class="text-center">Atención al cliente</h1>
+          </div>
+          <div class="col">
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="bg-img py-5" style="background-image: url('img/atencionalCliente.jpg');background-position: center; background-repeat:no-repeat;">
         <div class="container mb-4">
           <div class="row align-items-center">
             <div class="col">
             </div>
+              
             
-            </div>
           </div>
         </div>
         
     </section>
-    <div class="container mb-4">
-        <div class="row">
-            <div class="col">
-                <h1 class="text-center"style="color: #000000;">¿Necesitas Ayuda?</h1>
-                
-            </div>
-            <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-              Despliega el chat bot
-            </button>   
-        </div>
-
-    </div>
     
-  
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">CHAT BOT</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          Realice la pregunta deseada, en breves momentos sera atendido.
-          Gracias por su paciencia.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-warning">Entendido</button>
+    <section class="mt-4 ">
+      <div class="container text-center mb-4">
+          <div class="row">
+              <div class="col">
+                      
+              </div>
+              
+              <div class="col-lg-3 col-sm-12 ">
+                <div class="col">
+                  <h2 class="text-center">¿Necesitas Ayuda?</h2>
+                </div>
+                <button type="button" class="btn btn-warning mt-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Despliega el chat bot
+                </button> 
+              </div>
+
+              <div class="col">
+                      
+              </div>
+          </div>
+      </div>
+    </section>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">CHAT BOT</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Realice la pregunta deseada, en breves momentos sera atendido.
+            Gracias por su paciencia.
+          
+            <form method="get" action="chat.html" class="mt-3">
+              <input id="preguntasChat" type="search" class="form-control" title="¿Alguna pregunta?" placeholder="¿Alguna pregunta?" aria-label="Search">
+              
+              <div class="modal-footer mt-3">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="submit" class="btn btn-warning">Preguntar</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </main>
 
-    
-
-    
-</main>
-
-
-
-
-
-<div class="container border-top mt-5">
-  <footer class="py-5">
+  <footer class="container border-top mt-5 py-5">
     <div class="row">
       <div class="col-xl-3 col-sm-6 mb-2">
         <h5>Compañia</h5>
@@ -94,17 +162,17 @@
           <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted">Códigos promocionales</a></li>
         </ul>
       </div>
-
+  
       <div class="col-xl-3 col-sm-6 mb-2">
         <h5>Ayuda</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2"><a href="FAQs.html" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="FAQs.html" class="nav-link p-0 text-muted">Preguntas frecuentes</a></li>
           <li class="nav-item mb-2"><a href="comoFuncionaNuestraWeb.html" class="nav-link p-0 text-muted">Cómo funciona nuestra web</a></li>
-          <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted">Configuración de privacidad</a></li>
+          <li class="nav-item mb-2"><a href="configuracionPrivacidad.html" class="nav-link p-0 text-muted">Configuración de privacidad</a></li>
           <li class="nav-item mb-2"><a href="terminosYCondiciones.html" class="nav-link p-0 text-muted">Términos y condiciones</a></li>
         </ul>
       </div>
-
+  
       <div class="col-xl-3 col-sm-12 mb-2">
         <h5>Más</h5>
         <ul class="nav flex-column">
@@ -114,7 +182,7 @@
           <li class="nav-item mb-2"><a href="" class="nav-link p-0 text-muted">Blog</a></li>
         </ul>
       </div>
-
+  
       <div class="col-xl-3 col-sm-12 mb-2">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3">
@@ -127,7 +195,7 @@
         </div>
       </div>
     </div>
-
+  
     <div class="d-flex justify-content-between py-4 my-4 border-top">
       <div class="container">
         <div class="row align-items-start">
@@ -136,15 +204,15 @@
           </div>
           <div class="col-6">
             <ul class="list-unstyled d-flex justify-content-end">
-              <li class="ms-3"><a class="link-dark" href=""><i class="bi bi-twitter"></i></a></li>
-              <li class="ms-3"><a class="link-dark" href=""><i class="bi bi-instagram"></i></a></li>
-              <li class="ms-3"><a class="link-dark" href=""><i class="bi bi-facebook"></i></a></li>
+              <li class="ms-3"><a class="link-dark" href="https://twitter.com/"><i class="bi bi-twitter"></i> Twitter</a></li>
+              <li class="ms-3"><a class="link-dark" href="https://instagram.com/"><i class="bi bi-instagram"></i> Instagram</a></li>
+              <li class="ms-3"><a class="link-dark" href="https://facebook.com/"><i class="bi bi-facebook"></i> Facebook</a></li>
             </ul>
           </div>
         </div>
       </div>
+    </div>
   </footer>
-</div>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
