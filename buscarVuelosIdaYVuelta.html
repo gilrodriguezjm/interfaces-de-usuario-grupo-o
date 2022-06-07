@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,35 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styleBuscarVuelos.css">
     <title>buscarVueloIdaYVuelta</title>
+    <style>
+      .formulario input[type="radio"]{
+        display: none;
+      }
+      .formulario label{
+        color: black;
+        background: #fbff0060;
+        padding: 25px 15px;
+        display: inline-block;
+        font-size: 1em;
+        border-radius: 10px;
+        cursor: pointer;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+      .formulario label:hover{
+        background: #ffcc00a6;
+      }
+      .formulario label:before{
+        display: inline-block;
+        background: none;
+        border-radius: 50%;
+      }
+      .formulario input[type="radio"]:checked + label{
+        background: #ffcc00;
+        border: 5px solid black;
+      } 
+    </style>
 </head>
 <body>
   <div class="bg-dark fixed-top">
@@ -19,7 +48,7 @@
           </a>
     
           <div class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <form method="post" action="FAQs.html">
+            <form method="get" action="FAQs.html">
               <div class="container">
                 <div class="row align-items-center">
                   <div class="col-7">
@@ -59,6 +88,17 @@
   </div>
 
   <main class="py-5">
+    <section class="pt-5">
+      <div class="container">
+        <div class="col">
+          <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index3.html">Inicio</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Búsqueda de vuelo</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
     <div class="container mt-5">
       <section class="bg-img pt-5">
         <div class="container mb-4">
@@ -69,140 +109,161 @@
           </div>
         </div>
       </section>
-          <form action="seguros.html">
+          <form action="seguros.html" class="formulario">
                   <section>
                       <div class="row border" >
-                        <label for="ida1">
+                        <div>
                           <div class="row">
                               <div class="col-1"></div>
                               <div class="col-5">
-                                  <p id="grupoO"> Airplane</p>
+                                <p><i><b>Airplane</b></i></p>
                               </div>
                               <div class="col-2"></div>
                               <div class="col-4 ">
-                                  <p id="duracionVuelo"> 1h 50 </p>
+                                <p id="duracionVuelo1">Duracion: <b>1h 50</b></p>
                               </div>
                               
                           </div>
                           <div class="row">
                             <div class="col-1 text-center">
-                              <input type="radio" name="Ida" id="ida1" value="ida1" required>
+                              <fieldset>
+                                <input type="radio" name="Ida" id="ida1" value="ida1" required>
+                                <label for="ida1">Reservar</label>
+                              </fieldset>
                             </div>
                             <div class="col-2">
-                                <h4 id="salida">06:50 </h4>
+                              Hora de salida:
+                              <h4 id="salidaIda1">06:50</h4>
+                              Origen:
                             </div>
                             <div class="col-5 "></div>
                             <div class="col-2 ">
-                                <h4 id="llegada">08:40</h4>
+                              Hora de llegada:
+                              <h4 id="llegadaIda1">08:40</h4>
+                              Destino:
                             </div>
                             <div class="col-2">
-                                <h5 id="precio">64.99 EUR</h5>
+                              <h3 id="precioIda1">64.99 EUR</h3>
                             </div>
                           </div>
                           
                           <div class="row">
                               <div class="col-1"></div>
                               <div class="col-5">
-                                  <p id="siglasIda"> BCN </p>
+                                <p id="siglasIda1"><b>BCN</b></p>
                               </div>
                               <div class="col-2"></div>
                               <div class="col-4 ">
-                                  <p id="siglasVuelta"> LCG </p>
+                                <p id="siglasVuelta1"><b>LGC</b></p>
                               </div>
                               
                           </div>
-                        </label>
+                        </div>
                       </div>
                   </section>
                   
                   <section>
                       <div class="row border" >
-                        <label for="ida2">
+                        <div>
                           <div class="row">
                               <div class="col-1"></div>
                               <div class="col-5">
-                                  <p id="grupoO"> Airplane</p>
+                                <p><i><b>Airplane</b></i></p>
                               </div>
                               <div class="col-2"></div>
                               <div class="col-4 ">
-                                  <p id="duracionVuelo"> 1h 50 </p>
+                                <p id="duracionVueloIda2">Duracion: <b>1h 50</b></p>
                               </div>
                           </div>
                           <div class="row">
                             <div class="col-1 text-center">
-                              <input type="radio" name="Ida" id="ida2" value="ida2" required>
+                              <fieldset>
+                                <input type="radio" name="Ida" id="ida2" value="ida2" required>
+                                <label for="ida2">Reservar</label>
+                              </fieldset>
                             </div>
                             <div class="col-2 ">
-                                <h4 id="salida">13:55 </h4>
+                              Hora de salida:
+                              <h4 id="salidaIda2">13:55 </h4>
+                              Origen:
                             </div>
                             <div class="col-5 ">
                             </div>
                             <div class="col-2">
-                                <h4 id="llegada">15:45</h4>
+                              Hora de llegada:
+                              <h4 id="llegadaIda2">15:45</h4>
+                              Destino:
                             </div>
                             <div class="col-2">
-                                <h5 id="precio">50.99 EUR</h5>
+                              <h3 id="precioIda2">50.99 EUR</h3>
                             </div>
                           </div>               
                           <div class="row">
                               <div class="col-1"></div>
                               <div class="col-5">
-                                  <p id="siglasIda"> BCN </p>
+                                <p id="siglasIda2"><b>BCN</b></p>
                               </div>
                               <div class="col-2"></div>
                               <div class="col-4">
-                                  <p id="siglasVuelta"> LCG </p>
+                                <p id="siglasVuelta2"><b>LGC</b></p>
                               </div>
                               
                           </div>
-                        </label>
+                        </div>
                       </div>
                   </section>
       
                   <section>
                       <div class="row border" >
-                        <label for="ida3">
+                        <div>
                           <div class="row">
                               <div class="col-1"></div>
                               <div class="col-5">
-                                  <p id="grupoO"> Airplane</p>
+                                <p><i><b>Airplane</b></i></p>
                               </div>
                               <div class="col-2"></div>
                               <div class="col-4 ">
-                                  <p id="duracionVuelo"> 1h 50 </p>
+                                <p id="duracionVuelo3">Duracion: <b>1h 50</b></p>
                               </div>
                               
                           </div>
                           <div class="row">
                             <div class="col-1 text-center">
-                              <input type="radio" name="Ida" id="ida3" value="ida3" required>
+                              <fieldset>
+                                <input type="radio" name="Ida" id="ida3" value="ida3" required>
+                                <label for="ida3">Reservar</label>
+                              </fieldset>
                             </div>
                             <div class="col-2">
-                                <h4 id="salida">21:00 </h4>
+                              Hora de salida:
+                              <h4 id="salidaIda3">21:00</h4>
+                              Origen:
                             </div>
                             <div class="col-5 ">
                             </div>
     
                             <div class="col-2">
-                                <h4 id="llegada">22:50</h4>
+                              Hora de llegada:
+                              <h4 id="llegadaIda3">22:50</h4>
+                              Destino:
                             </div>
                             <div class="col-2">
-                                <h5 id="precio">80.99 EUR</h5>
+                              <h3 id="precioIda3">80.99 EUR</h3>
                             </div>
                           </div>
                           
                           <div class="row">
                               <div class="col-1"></div>
                               <div class="col-5">
-                                  <p id="siglasIda"> BCN </p>
+                                <p id="siglasIda3"><b>BCN</b></p>
                               </div>
                               <div class="col-2"></div>
                               <div class="col-4 ">
-                                  <p id="siglasVuelta"> LCG </p>
+                                <p id="siglasVuelta3"><b>LGC</b></p>
                               </div>
                               
                           </div>
-                        </label>
+                        </div>
                       </div>
                   </section>
                   <section class="bg-img pt-5">
@@ -216,137 +277,158 @@
                   </section>
                   <section>
                     <div class="row border" >
-                      <label for="vuelta1">
+                      <div>
                         <div class="row">
                             <div class="col-1"></div>
                             <div class="col-5">
-                                <p id="grupoO"> Airplane</p>
+                              <p><i><b>Airplane</b></i></p>
                             </div>
                             <div class="col-2"></div>
                             <div class="col-4 ">
-                                <p id="duracionVuelo"> 1h 50 </p>
+                              <p id="duracionVueloVuelta1">Duracion: <b>1h 50</b></p>
                             </div>
                             
                         </div>
                         <div class="row">
                           <div class="col-1 text-center">
-                            <input type="radio" name="Vuelta" id="vuelta1" value="vuelta1" required>
+                            <fieldset>
+                              <input type="radio" name="Vuelta" id="vuelta1" value="vuelta1" required>
+                              <label for="vuelta1">Reservar</label>
+                            </fieldset>
                           </div>
                           <div class="col-2">
-                              <h4 id="salida">09:50 </h4>
+                            Hora de salida:
+                            <h4 id="salidaVuelta1">09:50</h4>
+                            Origen:
                           </div>
                           <div class="col-5 "></div>
                           <div class="col-2 ">
-                              <h4 id="llegada">11:40</h4>
+                            Hora de llegada:
+                            <h4 id="llegadaVuelta1">11:40</h4>
+                            Destino:
                           </div>
                           <div class="col-2">
-                              <h5 id="precio">64.99 EUR</h5>
+                            <h3 id="precioVuelta1">64.99 EUR</h3>
                           </div>
                         </div>
                         
                         <div class="row">
                             <div class="col-1"></div>
                             <div class="col-5">
-                                <p id="siglasIda"> BCN </p>
+                              <p id="siglasVuelta4"><b>BCN</b></p>
                             </div>
                             <div class="col-2"></div>
                             <div class="col-4 ">
-                                <p id="siglasVuelta"> LCG </p>
+                              <p id="siglasVuelta5"><b>LGC</b></p>
                             </div>
                             
                         </div>
-                      </label>
+                      </div>
                     </div>
                 </section>
     
                 <section>
                     <div class="row border" >
-                      <label for="vuelta2">
+                      <div >
                         <div class="row">
                             <div class="col-1"></div>
                             <div class="col-5">
-                                <p id="grupoO"> Airplane</p>
+                              <p><i><b>Airplane</b></i></p>
                             </div>
                             <div class="col-2"></div>
                             <div class="col-4 ">
-                                <p id="duracionVuelo"> 1h 50 </p>
+                              <p id="duracionVueloVuelta2">Duracion: <b>1h 50</b></p>
                             </div>
                         </div>
                         <div class="row">
                           <div class="col-1 text-center">
-                            <input type="radio" name="Vuelta" id="vuelta2" value="vuelta2" required>
+                            <fieldset>
+                              <input type="radio" name="Vuelta" id="vuelta2" value="vuelta2" required>
+                              <label for="vuelta2">Reservar</label>
+                            </fieldset>
                           </div>
                           <div class="col-2 ">
-                              <h4 id="salida">15:55 </h4>
+                            Hora de salida:
+                            <h4 id="salidaVuelta2">15:55</h4>
+                            Origen:
                           </div>
                           <div class="col-5 ">
                           </div>
                           <div class="col-2">
-                              <h4 id="llegada">17:45</h4>
+                            Hora de llegada:
+                            <h4 id="llegadaVuelta2">17:45</h4>
+                            Destino:
                           </div>
                           <div class="col-2">
-                              <h5 id="precio">65.99 EUR</h5>
+                            <h3 id="precioVuelta2">64.99 EUR</h3>
                           </div>
                         </div>               
                         <div class="row">
                             <div class="col-1"></div>
                             <div class="col-5">
-                                <p id="siglasIda"> BCN </p>
+                              <p id="siglasVuelta6"><b>BCN</b></p>
                             </div>
                             <div class="col-2"></div>
                             <div class="col-4">
-                                <p id="siglasVuelta"> LCG </p>
+                              <p id="siglasVuelta7"><b>LGC</b></p>
                             </div>
                             
                         </div>
-                      </label>
+                      </div>
                     </div>
                 </section>
     
                 <section>
                     <div class="row border" >
-                      <label for="vuelta3">
+                      <div>
                         <div class="row">
                             <div class="col-1"></div>
                             <div class="col-5">
-                                <p id="grupoO"> Airplane</p>
+                              <p><i><b>Airplane</b></i></p>
                             </div>
                             <div class="col-2"></div>
                             <div class="col-4 ">
-                                <p id="duracionVuelo"> 1h 50 </p>
+                              <p id="duracionVueloVuelta3">Duracion: <b>1h 50</b></p>
                             </div>
                             
                         </div>
                         <div class="row">
                           <div class="col-1 text-center">
-                            <input type="radio" name="Vuelta" id="vuelta3" value="vuelta3" required>
+                            <fieldset>
+                              <input type="radio" name="Vuelta" id="vuelta3" value="vuelta3" required>
+                              <label for="vuelta3">Reservar</label>
+                            </fieldset>
                           </div>
                           <div class="col-2">
-                              <h4 id="salida">23:00 </h4>
+                            Hora de salida:
+                            <h4 id="salidaVuelta3">23:00</h4>
+                            Origen:
                           </div>
                           <div class="col-5 ">
                           </div>
   
                           <div class="col-2">
-                              <h4 id="llegada">00:50</h4>
+                            Hora de llegada:
+                            <h4 id="llegadaVuelta3">00:50</h4>
+                            Destino:
                           </div>
                           <div class="col-2">
-                              <h5 id="precio">60.99 EUR</h5>
+                            <h3 id="precioVuelta3">60.99 EUR</h3>
                           </div>
                         </div>
                         
                         <div class="row">
                             <div class="col-1"></div>
                             <div class="col-5">
-                                <p id="siglasIda"> BCN </p>
+                              <p id="siglasVuelta8"><b>BCN</b></p>
                             </div>
                             <div class="col-2"></div>
                             <div class="col-4 ">
-                                <p id="siglasVuelta"> LCG </p>
+                              <p id="siglasVuelta9"><b>LGC</b></p>
                             </div>
                             
                         </div>
-                      </label>
+                      </div>
                     </div>
                 </section>
               
@@ -376,7 +458,7 @@
       </div>
   
       <div class="col-xl-3 col-sm-6 mb-2">
-        <h5>Ayuda</h5>
+        <h5><a href="paginaAyuda.html" class="nav-link p-0 text-dark">Ayuda</a></h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-2"><a href="FAQs.html" class="nav-link p-0 text-muted">Preguntas frecuentes</a></li>
           <li class="nav-item mb-2"><a href="comoFuncionaNuestraWeb.html" class="nav-link p-0 text-muted">Cómo funciona nuestra web</a></li>
